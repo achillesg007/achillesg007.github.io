@@ -1,5 +1,5 @@
 ---
-title: Why can't people just remembe
+title: Making peace with Twilio
 tags: Linux
 article_header:
   type:overlay
@@ -10,9 +10,26 @@ Going insane, slowly but surely
 
 <!--more-->
 
-## Let's call this guy J
+## There's this guy JR
 
-J never turns in his reports on time.
+JR never turns in his reports on time. The man needs a reminder every week by text.
+I'm getting tired of it.
 
-## This is the section where i finish the post but im in class just wasting time
+## Automation
+
+Restore your sanity and automate text messaging using Twilio and crontab.
+
+### Template (almost identical to offical example):
+
+[File](https://github.com/achillesg007/woozy/blob/master/auto-phone.py)
+
+You need to set up a twilio account for this to work.
+{:.error}
+
+### Crontab:
+```yaml
+10 13 * * MON [path-to-script]/auto-phone.py
+```
+
+
 
